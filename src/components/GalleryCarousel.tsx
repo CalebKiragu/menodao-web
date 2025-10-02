@@ -128,7 +128,7 @@ const GalleryCarousel = () => {
             Our <span className="gradient-text-purple">Impact</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            See the smiles we've brightened and the communities we've empowered through our dental camps and outreach programs.
+            See the smiles we&apos;ve brightened and the communities we&apos;ve empowered through our dental camps and outreach programs.
           </p>
         </motion.div>
 

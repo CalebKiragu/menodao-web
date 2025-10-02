@@ -159,7 +159,7 @@ const Footer = () => {
         >
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © {currentYear} MenoDAO. All rights reserved. Founded by Dr. Said "Papi" Athman.
+              © {currentYear} MenoDAO. All rights reserved. Founded by Dr. Said &quot;Papi&quot; Athman.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a

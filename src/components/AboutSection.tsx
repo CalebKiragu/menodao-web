@@ -51,7 +51,7 @@ const AboutSection = () => {
             About <span className="gradient-text-green">MenoDAO</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Founded by Dr. Said "Papi" Athman, MenoDAO is a non-profit organization dedicated to 
+            Founded by Dr. Said &quot;Papi&quot; Athman, MenoDAO is a non-profit organization dedicated to 
             providing quality dental care to underserved and marginalized communities across Kenya and East Africa.
           </p>
         </motion.div>
@@ -73,7 +73,7 @@ const AboutSection = () => {
                       <Award className="h-16 w-16 text-emerald-600" />
                     </div>
                     <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                      Dr. Said "Papi" Athman
+                      Dr. Said &quot;Papi&quot; Athman
                     </h3>
                     <p className="text-gray-600">
                       Founder & Chief Dental Officer
