@@ -135,7 +135,7 @@ const GalleryCarousel = () => {
         {/* Carousel Container */}
         <div className="relative">
           {/* Main Carousel */}
-          <div className="relative overflow-hidden rounded-3xl shadow-2xl">
+          <div className="relative overflow-hidden rounded-3xl shadow-2xl w-full max-w-full">
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentIndex}
@@ -145,7 +145,7 @@ const GalleryCarousel = () => {
                 transition={{ duration: 0.5, ease: "easeInOut" }}
                 className="relative"
               >
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 w-full">
                   {/* Image Section */}
                   <div className="relative h-96 lg:h-[500px] bg-gradient-to-br from-emerald-100 via-teal-50 to-accent-100">
                     <div className="absolute inset-0 flex items-center justify-center">
@@ -243,18 +243,18 @@ const GalleryCarousel = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             onClick={goToPrevious}
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 backdrop-blur-sm rounded-full p-3 shadow-lg hover:bg-white transition-colors duration-200 z-10"
+            className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 bg-white/90 backdrop-blur-sm rounded-full p-2 sm:p-3 shadow-lg hover:bg-white transition-colors duration-200 z-10"
           >
-            <ChevronLeft className="h-6 w-6 text-gray-700" />
+            <ChevronLeft className="h-4 w-4 sm:h-6 sm:w-6 text-gray-700" />
           </motion.button>
 
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             onClick={goToNext}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 backdrop-blur-sm rounded-full p-3 shadow-lg hover:bg-white transition-colors duration-200 z-10"
+            className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 bg-white/90 backdrop-blur-sm rounded-full p-2 sm:p-3 shadow-lg hover:bg-white transition-colors duration-200 z-10"
           >
-            <ChevronRight className="h-6 w-6 text-gray-700" />
+            <ChevronRight className="h-4 w-4 sm:h-6 sm:w-6 text-gray-700" />
           </motion.button>
 
           {/* Dots Indicator */}

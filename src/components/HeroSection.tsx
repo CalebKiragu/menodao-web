@@ -17,11 +17,11 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-nature" />
       
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-20 w-72 h-72 bg-emerald-300 rounded-full mix-blend-multiply filter blur-xl animate-pulse-slow" />
-        <div className="absolute top-40 right-20 w-72 h-72 bg-accent-300 rounded-full mix-blend-multiply filter blur-xl animate-pulse-slow" />
-        <div className="absolute bottom-20 left-1/2 w-72 h-72 bg-secondary-300 rounded-full mix-blend-multiply filter blur-xl animate-pulse-slow" />
-        <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-teal-200 rounded-full mix-blend-multiply filter blur-xl animate-pulse-slow" />
+      <div className="absolute inset-0 opacity-10 overflow-hidden">
+        <div className="absolute top-20 left-4 sm:left-20 w-48 sm:w-72 h-48 sm:h-72 bg-emerald-300 rounded-full mix-blend-multiply filter blur-xl animate-pulse-slow" />
+        <div className="absolute top-40 right-4 sm:right-20 w-48 sm:w-72 h-48 sm:h-72 bg-accent-300 rounded-full mix-blend-multiply filter blur-xl animate-pulse-slow" />
+        <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 w-48 sm:w-72 h-48 sm:h-72 bg-secondary-300 rounded-full mix-blend-multiply filter blur-xl animate-pulse-slow" />
+        <div className="absolute top-1/2 left-1/4 w-64 sm:w-96 h-64 sm:h-96 bg-teal-200 rounded-full mix-blend-multiply filter blur-xl animate-pulse-slow" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -145,22 +145,22 @@ const HeroSection = () => {
               <motion.div
                 animate={{ y: [-10, 10, -10] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -top-4 -right-4 bg-white rounded-2xl p-4 shadow-lg border border-emerald-200"
+                className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 bg-white rounded-2xl p-2 sm:p-4 shadow-lg border border-emerald-200"
               >
-                <div className="flex items-center space-x-2">
-                  <Users className="h-6 w-6 text-emerald-600" />
-                  <span className="text-sm font-semibold text-gray-800">Community</span>
+                <div className="flex items-center space-x-1 sm:space-x-2">
+                  <Users className="h-4 w-4 sm:h-6 sm:w-6 text-emerald-600" />
+                  <span className="text-xs sm:text-sm font-semibold text-gray-800">Community</span>
                 </div>
               </motion.div>
 
               <motion.div
                 animate={{ y: [10, -10, 10] }}
                 transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -bottom-4 -left-4 bg-white rounded-2xl p-4 shadow-lg border border-accent-200"
+                className="absolute -bottom-2 -left-2 sm:-bottom-4 sm:-left-4 bg-white rounded-2xl p-2 sm:p-4 shadow-lg border border-accent-200"
               >
-                <div className="flex items-center space-x-2">
-                  <Shield className="h-6 w-6 text-accent-600" />
-                  <span className="text-sm font-semibold text-gray-800">Insurance</span>
+                <div className="flex items-center space-x-1 sm:space-x-2">
+                  <Shield className="h-4 w-4 sm:h-6 sm:w-6 text-accent-600" />
+                  <span className="text-xs sm:text-sm font-semibold text-gray-800">Insurance</span>
                 </div>
               </motion.div>
             </div>

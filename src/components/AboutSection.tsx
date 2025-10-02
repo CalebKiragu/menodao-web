@@ -86,9 +86,9 @@ const AboutSection = () => {
               <motion.div
                 animate={{ rotate: [0, 5, -5, 0] }}
                 transition={{ duration: 4, repeat: Infinity }}
-                className="absolute -top-4 -right-4 bg-gradient-to-r from-accent-500 to-purple-500 text-white px-4 py-2 rounded-full shadow-lg"
+                className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 bg-gradient-to-r from-accent-500 to-purple-500 text-white px-2 sm:px-4 py-1 sm:py-2 rounded-full shadow-lg"
               >
-                <span className="text-sm font-semibold">Founder</span>
+                <span className="text-xs sm:text-sm font-semibold">Founder</span>
               </motion.div>
             </div>
           </motion.div>
